@@ -1,0 +1,33 @@
+.skeleton-loading {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skeleton-loading-line {
+    width: 80%;
+    height: 1rem;
+    margin-bottom: .5rem;
+    background-color: #f83232;
+    border-radius: 8px;
+    animation: loading 1s ease-in-out infinite;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: gray;
+  }
+  
+  @keyframes loading {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  
