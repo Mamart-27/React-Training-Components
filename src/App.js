@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+const cardData = {
+  imgUrl: 'https://via.placeholder.com/150',
+  title: 'Card Title',
+  description: 'Card Description',
+  buttonUrl: '#',
+  buttonText: 'Learn More',
+};
+
 function App() {
   return (
     <div className="App">
