@@ -1,0 +1,57 @@
+/* Hide the default radio button */
+.custom-radio-input {
+    display: none;
+  }
+  
+  /* Create a custom radio button */
+  .custom-radio-input + label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      vertical-align: middle;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  /* Style the selected radio button */
+  .custom-radio-input:checked + label:before {
+      content: "";
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+      transform: scale(1.1);
+  }
+  
+  /* Style the label */
+  /* label {
+      font-size: 16px;
+      margin-right: 20px;
+      cursor: pointer;
+  } */
+  label {
+    font-size: 16px;
+    float: left; /* make the label element float to left */
+    margin-right: 10px; /* add space between options */
+    cursor: pointer;
+  }
+
+  /* Show the radio button when selected */
+  /* .custom-radio-input:checked + label:after {
+      content: " ";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      background-color: rgb(247, 61, 61);
+      position: absolute;
+  } */
+  
+  /* Make the radio buttons appear in one line */
+  .custom-radio-container {
+    display: inline-flex; /* change this property */
+    align-items: center;
+  }
+  
